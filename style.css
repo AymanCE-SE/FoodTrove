@@ -10,3 +10,10 @@
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
 }
+#productsFooter img{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#productsFooter img:hover{
+    transform: scale(1.1);
+}
