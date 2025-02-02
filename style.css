@@ -1,0 +1,12 @@
+.slogan{
+    font-family: "Pacifico", serif;
+    font-weight: 600;
+}
+#searchBar{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+#searchBtn{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
