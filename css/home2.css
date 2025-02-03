@@ -1,0 +1,56 @@
+
+.hero{
+    background-color: #E6E6E6;
+    position: relative;
+    padding-top: 50px;
+}
+
+.hero mark{
+    background-color: transparent;
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.hero img{
+    position: absolute;
+}
+
+.lttuce{
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    z-index: 1;
+}
+
+.tag {
+    display: inline-block;
+    background: white;
+    color: green;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.tag:nth-child(2) {
+    color: black;
+}
+
+.tag i {
+    color: grey;
+    font-size: 10px;
+}
+.subscribe-input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    width: 70%;
+}
+.subscribe-btn {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+}
+.subscribe-btn:hover {
+    background: #218838;
+}
