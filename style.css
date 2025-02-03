@@ -12,8 +12,16 @@
 }
 #productsFooter img{
     cursor: pointer;
+    min-width: 33px;
+    max-width: 73.59px;
     transition: all 0.3s ease-in-out;
 }
 #productsFooter img:hover{
     transform: scale(1.1);
+}
+
+.banner{
+    background: url('/images/Section.png') no-repeat center center;
+    background-size: cover;
+    height: 95vh;
 }
