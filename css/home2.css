@@ -1,4 +1,28 @@
 
+/* ******** Header & Footer ********* */
+.slogan{
+    font-family: "Pacifico", serif;
+    font-weight: 600;
+}
+#searchBar{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+#searchBtn{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+#productsFooter img{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#productsFooter img:hover{
+    transform: scale(1.1);
+}
+
+
+/* ******** Hero ********* */
+
 .hero{
     background-color: #E6E6E6;
     position: relative;
@@ -44,8 +68,6 @@
     left: 55%;
 }
 
-
-
 .tag {
     display: inline-block;
     background: white;
@@ -67,6 +89,9 @@
 .hero form{
     background-color: white;
     width: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
 
 
@@ -75,6 +100,20 @@
     border: 0;
     width: 70%;
 }
+
+.fa-paper-plane{
+    color: var(--bs-secondary-color);
+}
+
+
+.subscribe-input:focus {
+    outline: none;
+}
+
+.subscribe-input:focus {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 .subscribe-btn {
     padding: 10px 20px;
     background: #28a745;
