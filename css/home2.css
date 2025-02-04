@@ -20,8 +20,9 @@
     transform: scale(1.1);
 }
 
-
-/* ******** Hero ********* */
+/* ********************************************* */
+/* ******************* Hero ******************** */
+/* ********************************************* */
 
 .hero{
     background-color: #E6E6E6;
@@ -125,10 +126,46 @@
     background: #218838;
 }
 
+/* ********************************************* */
+/* ******************* Featured products ******* */
+/* ********************************************* */
 
+.banner-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #000;
+    padding: 30px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-card h5 {
+    font-weight: bold;
+    width: 55%;
+}
 
-
-
+.banner-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;                     /* top, right, bottom, left */
+    background-size: cover;
+    background-position: center;
+}
+.banner-1::before {
+    background-image: url('../images/shop_now/banner-1.png.png');
+}
+.banner-2::before {
+    background-image: url('../images/shop_now/banner-2.png.png');
+}
+.banner-3::before {
+    background-image: url('../images/shop_now/banner-3.png.png');
+}
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
 
 
 
