@@ -21,7 +21,28 @@
 }
 
 .banner{
-    background: url('/images/Section.png') no-repeat center center;
+    background: url('/images/Section.png') no-repeat  content-box  ;
     background-size: cover;
     height: 95vh;
+}
+.banner-bar{
+    position: relative;
+    background: url('/images/product-banner.jpg.png') no-repeat   ;  
+    background-size: cover;
+    height: 110vh;
+}
+/* cards  */
+.card.border-0.shadow-sm.text-center img{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.card.border-0.shadow-sm.text-center img:hover{
+    transform: scale(1.1);
+}
+
+#advs-title{
+    position: relative;
+    background-size: cover;
+    height: 110vh;
+    border: 1px solid red;
 }
