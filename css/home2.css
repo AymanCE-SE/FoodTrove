@@ -111,9 +111,7 @@
     outline: none;
 }
 
-.subscribe-input:focus {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-}
+
 
 .subscribe-btn {
     padding: 10px 20px;
@@ -173,61 +171,14 @@
 /* ********************************************* */
 
 
-
-
-.product-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-.product-title {
-    font-size: 16px;
-    font-weight: bold;
-}
-.price {
-    font-size: 18px;
-    font-weight: bold;
-    color: #28a745;
-}
-.old-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 14px;
-    margin-left: 5px;
-}
-.btn-cart {
-    background: #ff4d4d;
-    color: white;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-size: 14px;
-    border: none;
-}
-.btn-cart:hover {
-    background: #e63946;
-}
-.badge-category {
-    font-size: 12px;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.badge-blue { background: #4da6ff; color: white; }
-.badge-green { background: #28a745; color: white; }
-.badge-red { background: #ff4d4d; color: white; }
-
-
 .product-card {
     border: 1px solid #eee;
     border-radius: 15px;
     padding: 20px;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: white;
     position: relative;
+    margin-bottom: 10px;
 }
 
 
@@ -242,15 +193,20 @@
 }
 .product-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 0;
+    left: 0;
     background: #1fa362;
     color: white;
     padding: 5px 10px;
-    border-radius: 15px;
+    border-radius: 15px 0;
     font-size: 12px;
-    font-weight: bold;
 }
+
+.badge-blue { background: #4da6ff;}
+.badge-green { background: #28a745;}
+.badge-red { background: #F74B81;}
+.badge-orange { background: #F59758;}
+
 .product-category {
     font-size: 12px;
     color: gray;
@@ -258,8 +214,8 @@
     margin-bottom: 5px;
 }
 .product-title {
-    font-size: 16px;
-    font-weight: bold;
+    /* font-size: 16px; */
+    /* font-weight: bold; */
     margin-bottom: 5px;
 }
 .product-brand {
@@ -272,6 +228,7 @@
     text-decoration: underline;
 }
 .rating {
+    width: 80px;
     font-size: 14px;
     color: #999;
     margin-bottom: 5px;
@@ -280,33 +237,129 @@
     color: gold;
 }
 .price {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: #28a745;
 }
 .old-price {
     text-decoration: line-through;
     color: #999;
-    font-size: 14px;
-    margin-left: 5px;
+    font-size: 12px;
+    /* margin-left: 5px; */
 }
 .btn-cart {
     background: #ff4d4d;
     color: white;
-    border-radius: 20px;
-    padding: 8px 16px;
-    font-size: 14px;
+    /* border-radius: 20px; */
+    /* padding: 8px 16px; */
+    /* font-size: 14px; */
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btn-cart i {
+
+/* .btn-cart i {
     margin-right: 5px;
-}
+} */
+
 .btn-cart:hover {
     background: #e63946;
 }
+
+.popular-nav{
+    background-color: white !important;
+}
+
+.popular-nav a{
+    color: #000 !important;
+}
+
+.popular-nav .active{
+    color: #28a745 !important;
+}
+
+.popular-nav a:hover{
+    color: #28a745 !important;
+}
+
+
+
+
+
+/*  *************************************************** */
+/* ******************** Daily Ssles ******************* */
+/*  *************************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
