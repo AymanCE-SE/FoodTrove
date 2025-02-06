@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product_list_left</title>
+  </head>
+    <!-- Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+
+  <!-- font awesome  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS-Sheet  -->
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <header class="container-fluid">
+        <!-- Top Nav Bar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <!--  Links  -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto m-auto col-5 justify-content-evenly">
+              <li class="nav-item">
+                <a class="nav-link col-2 active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Elements
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <span class="navbar-text col-3">
+              <i class="fa-solid fa-phone"></i>
+              +123 (456) (7890)
+            </span>
+          </div>
+        </div>
+      </nav>
+
+        <!-- Bottom Nav  -->
+      <nav
+        class="navbar navbar-expand-lg border-top border-bottom border-light-secondary flex-wrap">
+        <div class="container-fluid justify-content-start ms-5 col-9 col-md-6">
+            <!-- Logo  -->
+            <div class=" d-flex align-items-center d-none d-lg-block">
+                <img
+                class=" "
+                src="/images/Singaporean.png"
+                width="34px"
+                height="42px"
+                alt="" />
+                  <span class=" slogan ">FoodTrove</span>
+            </div>
+          <!-- search bar -->
+          <form class="d-flex mx-5 col-6" role="search">
+            <input
+              class="form-control ms-3 col-4 border-success"
+              id="searchBar"
+              type="search"
+              placeholder="Search for items..."
+              aria-label="Search" />
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-dark dropdown-toggle h-100 border-success rounded-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                All Categories
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-danger " type="submit" id ="searchBtn">
+              <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- icons  -->
+        <div class="icons  col-2 col-md-4 text-body-secondary">
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item me-3 d-none d-lg-flex">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-user "></i> Account</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-flex">
+              <a class="nav-link " href="#"
+                ><i class="fas fa-heart"></i> Wishlist</a
+              >
+            </li>
+            <li class="nav-item d-none d-md-flex">
+              <a class="nav-link " href="#"
+                ><i class="fa-solid fa-cart-shopping"></i> cart</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+<div class="row bg-danger align-items-center px-5" style="height: 70px; ">
+    <div class="col-9 px-5 ">
+        <a href="" class="fs-4" style="text-decoration: none; color: white;">Shop</a>
+    </div>
+
+    <div class="col-1 d-flex align-items-center gap-1 text-light">
+        <a href="" style="text-decoration: none; color: white;">home</a> 
+        -
+        <a href="" style="text-decoration: none; color: white;">product</a>
+    </div>
+
+
+</div>
+      
+
+
+
+
+
+    <div class="container mt-4 d-flex">
+      <!-- Sidebar Filters -->
+      <div class="filter-sidebar d-none d-lg-block col-lg-3" style="height: 969.97px;" >
+        <h5 class="filter-title">Product Category</h5>
+        <hr>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="category1" />
+          <label class="form-check-label" for="category1">Juice & Drinks [20]</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="category2" />
+          <label class="form-check-label" for="category2">Dairy & Milk [54]</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="category3" />
+          <label class="form-check-label" for="category3">Snack & Spice [64]</label>
+        </div>
+  
+        <h5 class="filter-title mt-3">Filter By Price</h5>
+        <hr>
+
+        <input type="range" class="form-range" min="20" max="250" />
+        <p>Price: $20 - $250</p>
+        <button class="btn btn-danger btn-sm">Filter</button>
+        
+  
+        <h5 class="filter-title mt-3">Product Category</h5>
+        <hr>
+
+        <div class="color-row">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="color1" />
+            <label class="form-check-label" for="color1">Blue</label>
+          </div>
+          <span class="color-box" style="background: blue;"></span>
+        </div>
+        <div class="color-row">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="color2" />
+            <label class="form-check-label" for="color2">Yellow</label>
+          </div>
+          <span class="color-box" style="background: yellow;"></span>
+        </div>
+        <div class="color-row">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="color3" />
+            <label class="form-check-label" for="color3">Red</label>
+          </div>
+          <span class="color-box" style="background: red;"></span>
+        </div>
+        <div class="color-row">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="color4" />
+            <label class="form-check-label" for="color4">Green</label>
+          </div>
+          <span class="color-box" style="background: green;"></span>
+        </div>
+  
+        <h5 class="filter-title mt-3">Weight</h5>
+        <hr>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weight1" />
+          <label class="form-check-label" for="weight1">2kg Pack</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weight2" />
+          <label class="form-check-label" for="weight2">20kg Pack</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="weight3" />
+          <label class="form-check-label" for="weight3">30kg Pack</label>
+        </div>
+  
+        <h5 class="filter-title mt-3">Product Tags</h5>
+        <hr>
+
+        <span class="badge bg-light text-dark">Vegetables</span>
+        <span class="badge bg-light text-dark">Juice</span>
+        <span class="badge bg-light text-dark">Food</span>
+        <span class="badge bg-light text-dark">Dry Fruits</span>
+        <span class="badge bg-light text-dark">Dry Fruits</span>
+        <span class="badge bg-light text-dark">Dry Fruits</span>
+        <span class="badge bg-light text-dark">Dry Fruits</span>
+      </div>
+  
+      <div class="container">
+        <div class="d-flex justify-content-start align-items-center bg-light border border-secondary rounded-3 py-2 px-3" style="height: 47px;">
+      
+          <div class="d-flex">
+            <div class="d-flex justify-content-center align-items-center bg-danger rounded-3 border border-secondary me-2" style="width: 35px; height: 35px;">
+              <img class="icon" src="images/Iconnn.png" style="width: 20px; height: 20px;" alt="Icon 1">
+            </div>
+            <div class="d-flex justify-content-center align-items-center bg-white rounded-3 border border-secondary" style="width: 35px; height: 35px;">
+              <img class="icon2" src="images/xIcon.png" style="width: 20px; height: 20px;" alt="Icon 2">
+            </div>
+          </div>
+      
+          <div class="ms-3" style="flex-grow: 1;">
+            <div class="text-muted" style="font-family: 'Poppins-Regular', sans-serif; font-size: 14px; letter-spacing: 0.48px;">We found 29 items for you!</div>
+          </div>
+      
+          <div class="d-flex align-items-center bg-white border border-secondary rounded-3" style="height: 35px; width: 192px;">
+            <div class="text-muted" style="font-family: 'Poppins-Regular', sans-serif; font-size: 15px; letter-spacing: 0.48px; padding-left: 16px;">
+              Sort By:
+            </div>
+            <div class="d-flex justify-content-between align-items-center" style="width: 112px; padding-right: 12px;">
+              <div class="text-muted" style="font-family: 'Poppins-Regular', sans-serif; font-size: 15px; letter-spacing: 0.48px; padding-left: 12px;">
+                Featured
+              </div>
+              <img class="image" src="images/image.png" style="width: 10px; height: 10px;" alt="Image">
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="row d-flex justify-content-sm-center my-4">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/10.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/9.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/1.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/2.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/2.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/13.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/3.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/17.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+              <div class="card" style="width: 306px; height: 477px;">
+                <div class="position-relative">
+                  <div class="border rounded-3 overflow-hidden" style="background: #f7f7f8; height: 300px;">
+                    <img class="images-fluid" src="images/10.jpg.png" alt="Product Image" style="object-fit: cover; width: 100%; height: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center position-absolute" style="bottom: -17px; width: 100%;">
+                    <div class="border rounded-circle" style="background: #f7f7f8; width: 35px; height: 35px;">
+                      <i class="fa-solid fa-lock" style="width: 16px; height: 16px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x" style="width: 200px;">
+                  <div class="text-center text-secondary" style="font-size: 13px; letter-spacing: 0.48px;">Fruits</div>
+                  <div class="text-center text-muted" style="font-size: 11px; letter-spacing: 0.48px;">(4.5)</div>
+                  <div class="text-center text-dark" style="font-size: 15px; font-weight: 500; letter-spacing: 0.48px;">Fresh organic apple 1kg simla<br>marming</div>
+                  <div class="text-center text-danger" style="font-size: 16px; font-weight: 700; letter-spacing: 0.48px;">$120.25</div>
+                  <div class="text-center text-muted text-decoration-line-through" style="font-size: 13px; letter-spacing: 0.48px;">$123.25</div>
+                </div>
+              </div>
+            </div>
+      
+      
+          </div>
+
+
+
+
+      </div>
+      
+      
+    </div>
+
+    
+  
+  </div>
+
+
+<div class="d-flex justify-content-center mb-5">
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item disabled"><a class="page-link bg-danger" href="#">1</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+          <li class="page-item disabled">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    
+</div>
+    <!-- page footer -->
+    <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- section 1 -->
+                <div class="col-md-3">
+                  <!-- logo  -->
+                  <div class=" d-flex align-items-center d-none d-lg-block">
+                    <img
+                    class=" "
+                    src="/images/Singaporean.png"
+                    width="46.97"
+                    height="46.97"
+                    alt="" />
+                      <span class=" slogan fs-6 ">FoodTrove</span>
+                </div>
+                    <p class="small">
+                      FoodTrove is the biggest market of grocery products. Get your daily needs from our store.
+                    </p>
+                    <p><i class="fas fa-map-marker-alt text-danger"></i> 51 Green St.Huntington ohaio beach ontario, NY
+                      11746 KY 4783, USA.</p>
+                    <p><i class="fas fa-envelope text-danger"></i> example@email.com</p>
+                    <p><i class="fas fa-phone text-danger"></i> +91 123 4567890</p>
+                </div>
+    
+                <!-- section 2  -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Delivery Information</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Support Center</a></li>
+                    </ul>
+                </div>
+    
+                <!-- section 3  -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Category</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">Dairy & Bakery</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fruits & Vegetable</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Snack & Spice</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Juice & Drinks</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Chicken & Meat</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fast Food</a></li>
+                    </ul>
+                </div>
+    
+
+                <div class="col-md-4 ">
+                    <h5 class="fw-bold">Subscribe Our Newsletter</h5>
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Search here..." aria-label="Search">
+                        <button class="btn btn-dark"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    
+                    <!-- social icons  -->
+                    <div class="mb-3">
+                        <a href="#" class="git merge mybranch
+                        text-dark me-2"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></i></a>
+                        <a href="#" class="text-dark me-2"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i></a>
+                        <a href="#" class="text-dark"><i class="fa-solid fa-globe" style="color: #000000;"></i></a>
+                        <a href="#" class="text-dark me-2"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                    </div>
+    
+                    <!-- products footer images  -->
+                    <div class="d-flex justify-content-end" id="productsFooter">
+                        <img src="/images/1.png" class=" me-2" width="73.59" >
+                        <img src="/images/2.png" class=" me-2" width="73.59">
+                        <img src="/images/3.png" class=" me-2" width="73.59">
+                        <img src="/images/4.png" class=" me-2" width="73.59">
+                        <img src="/images/5.png" class=" me-2" width="73.59">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- copyrights part  -->
+            <div class="text-center mt-4">
+                <p class="small">&copy; 2024 <span class="text-danger fw-bold">FoodTrove</span>, All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

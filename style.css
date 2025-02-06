@@ -17,3 +17,29 @@
 #productsFooter img:hover{
     transform: scale(1.1);
 }
+
+.filter-sidebar {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.filter-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.color-box {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.color-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
