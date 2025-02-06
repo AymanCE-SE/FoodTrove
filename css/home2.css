@@ -333,7 +333,6 @@
     position: relative;
 }
 
-
 .dialy-content{
     position: absolute;
     z-index: 2;
@@ -359,11 +358,39 @@
     font-size: 15px;
 }
 
+/* ********************************************************** */
+/* ******************* Deals of the day ********************* */
+/* ********************************************************** */
 
+.deals .product-card{
+    border: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+}
 
+.deals .product-card img{
+    width: 100%;
+    margin-bottom: 0;
+}
 
+.deals .deals-content{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    padding: 10px;
+    width: 90%;
+    border-radius: 15px;
+    bottom: -40%;
+    left: 5%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
 
+/*
+absoulte position for deals-content 
 
+*/
 
 
 
@@ -474,5 +501,19 @@
 
     .hero .img2 {
         height: 15%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .deals .product-card{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .deals .deals-content{
+        bottom: -15%;
     }
 }
