@@ -46,4 +46,29 @@
     height: 110vh;
     border: 1px solid red;
 }
-
+.list-group li{
+    cursor: pointer;
+}
+#leftSec2 p{
+    cursor: pointer;
+}
+.testimonial-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-top: -40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.quote-icon {
+    color: #ddd;
+    font-size: 24px;
+}
