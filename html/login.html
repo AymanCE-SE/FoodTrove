@@ -23,6 +23,8 @@
     <!-- CSS-Sheet  -->
   <link rel="stylesheet" href="../css/login.css">
   <link rel="stylesheet" href="../style.css">
+ 
+ 
   <body>
     <header class="container-fluid">
         <!-- Top Nav Bar -->
@@ -215,6 +217,50 @@
       </nav>
     </header>
 
+    <!-- As a link -->
+    <div class="container-fluid row bg-danger align-items-center px-5" style="height: 70px; ">
+        <div class="col-9 px-5  ms-5 fs-5 ">
+            <a href="#" style="text-decoration: none; color: white;">Login</a>
+        </div>
+    
+        <div class="col-1 d-flex align-items-center gap-1 text-light ">
+            <a href="" style="text-decoration: none; color: white;">home</a> 
+            -
+            <a href="#" style="text-decoration: none; color: white;">Login</a>
+        </div>
+    </div>
+
+<!-- login form  -->
+<section class="container d-flex align-items-center justify-content-center" style="height: 80vh;">
+    <div class="card shadow-lg p-4  " style="width: 400px; ">
+                <!-- Logo  -->
+                <div class=" d-flex align-items-center d-none d-lg-block mx-auto">
+                    <img
+                    class=" "
+                    src="../images/Singaporean.png"
+                    width="40px"
+                    alt="" />
+                    <span class=" slogan align-items-center">FoodTrove</span>
+                </div>
+            <form>
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label ">Email Address*</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password*</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Your Password">
+            </div>
+            <div class="my-2 ">
+                <input type="checkbox" value="">
+                <label class="form-label ms-1 text-secondary"> Remember Me</label>
+                <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 text-secondary float-end text-muted fs-6">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn btn-danger ">Login</button>
+            <a href="#" class="link-offset-2 link-underline link-underline-opacity-0 text-secondary float-end text-muted fs-6">Sign Up?</a>
+        </form>
+    </div>
+</section>
 
 
 
