@@ -1,3 +1,4 @@
+/* header  */
 .slogan{
     font-family: "Pacifico", serif;
     font-weight: 600;
@@ -10,6 +11,8 @@
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
 }
+
+/* footer */
 #productsFooter img{
     cursor: pointer;
     min-width: 33px;
@@ -20,18 +23,21 @@
     transform: scale(1.1);
 }
 
+/* banner section 1  */
 .banner{
     background: url('/images/Section.png') no-repeat  content-box  ;
     background-size: cover;
     height: 95vh;
 }
+
+/* section 3 advs banner & products   */
 .banner-bar{
     position: relative;
     background: url('/images/product-banner.jpg.png') no-repeat   ;  
     background-size: cover;
     height: 110vh;
 }
-/* cards  */
+/*product cards  */
 .card.border-0.shadow-sm.text-center img{
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -40,18 +46,19 @@
     transform: scale(1.1);
 }
 
-#advs-title{
+/* #advs-title{
     position: relative;
     background-size: cover;
     height: 110vh;
     border: 1px solid red;
-}
+} */
 .list-group li{
     cursor: pointer;
 }
 #leftSec2 p{
     cursor: pointer;
 }
+/* section 8 */
 .testimonial-card {
     text-align: center;
     padding: 30px;
