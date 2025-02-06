@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faq</title>
+  </head>
+    <!-- Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous" />
+
+  <!-- font awesome  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS-Sheet  -->
+  <link rel="stylesheet" href="../css/faq.css">
+  <link rel="stylesheet" href="../style.css">
+ 
+ 
+  <body>
+    <header class="container-fluid">
+        <!-- Top Nav Bar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <!--  Links  -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto m-auto col-5 justify-content-evenly">
+              <li class="nav-item">
+                <a class="nav-link col-2 active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle col-1"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Elements
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <span class="navbar-text col-3">
+              <i class="fa-solid fa-phone"></i>
+              +123 (456) (7890)
+            </span>
+          </div>
+        </div>
+      </nav>
+
+        <!-- Bottom Nav  -->
+      <nav
+        class="navbar navbar-expand-lg border-top border-bottom border-light-secondary flex-wrap">
+        <div class="container-fluid justify-content-start ms-5 col-9 col-md-6">
+            <!-- Logo  -->
+            <div class=" d-flex align-items-center d-none d-lg-block ms-5">
+                <img
+                class=" "
+                src="../images/Singaporean.png"
+                width="34px"
+                height="42px"
+                alt="" />
+                  <span class=" slogan ">FoodTrove</span>
+            </div>
+          <!-- search bar -->
+          <form class="d-flex  mx-md-5 col-5 " role="search">
+            <input
+              class="form-control ms-3 col-4 border-success"
+              id="searchBar"
+              type="search"
+              placeholder="Search for items..."
+              aria-label="Search" />
+            <div class="dropdown">
+              <button
+                class="btn btn-outline-dark dropdown-toggle h-100 border-success rounded-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                All Categories
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-danger " type="submit" id ="searchBtn">
+              <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- icons  -->
+        <div class="icons  col-2 col-md-4 text-body-secondary">
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item me-3 d-none d-lg-flex">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-user "></i> Account</a
+              >
+            </li>
+            <li class="nav-item d-none d-lg-flex">
+              <a class="nav-link " href="#"
+                ><i class="fas fa-heart"></i> Wishlist</a
+              >
+            </li>
+            <li class="nav-item d-none d-md-flex">
+              <a class="nav-link " href="#"
+                ><i class="fa-solid fa-cart-shopping"></i> cart</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- As a link -->
+    <div class="container-fluid row bg-danger align-items-center px-5" style="height: 70px; ">
+        <div class="col-9 px-5  ms-5 fs-5 ">
+            <a href="#" style="text-decoration: none; color: white;">Faq</a>
+        </div>
+    
+        <div class="col-1 d-flex align-items-center gap-1 text-light ">
+            <a href="#" style="text-decoration: none; color: white;">home</a> 
+            -
+            <a href="#" style="text-decoration: none; color: white;">Faq</a>
+        </div>
+    </div>
+
+    <section class="container my-5">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../images/text.png" class="img-fluid" alt="Fresh vegetables">
+          </div>
+          <div class="col-md-6 ">
+            <div class="accordion accordion-flush  " id="accordionFlushExample">
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What Facilities Does Your Hotel Have?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How Do I Book A Room For My Vacation?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        How We are best among others?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Is There Any Fitness Center In Your Hotel?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        What Type Of Room Service Do You Offer?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        What Facilities Does Your Hotel Have?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        How Do I Book A Room For My Vacation?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- page footer -->
+    <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row ">
+                <!-- section 1 -->
+                <div class="col-md-4">
+                  <!-- logo  -->
+                  <div class=" d-flex align-items-center d-none d-lg-block">
+                    <img
+                    class=" "
+                    src="../images/Singaporean.png"
+                    width="46.97"
+                    height="46.97"
+                    alt="" />
+                      <span class=" slogan fs-6 ">FoodTrove</span>
+                </div>
+                    <p class="small">
+                      FoodTrove is the biggest market of grocery products. Get your daily needs from our store.
+                    </p>
+                    <p><i class="fas fa-map-marker-alt text-danger"></i> 51 Green St.Huntington ohaio beach ontario, NY
+                      11746 KY 4783, USA.</p>
+                    <p><i class="fas fa-envelope text-danger"></i> example@email.com</p>
+                    <p><i class="fas fa-phone text-danger"></i> +91 123 4567890</p>
+                </div>
+    
+                <!-- section 2  -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Delivery Information</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Support Center</a></li>
+                    </ul>
+                </div>
+    
+                <!-- section 3  -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Category</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">Dairy & Bakery</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fruits & Vegetable</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Snack & Spice</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Juice & Drinks</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Chicken & Meat</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fast Food</a></li>
+                    </ul>
+                </div>
+    
+
+                <div class="col-md-4 ">
+                    <h5 class="fw-bold">Subscribe Our Newsletter</h5>
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Search here..." aria-label="Search">
+                        <button class="btn btn-dark"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    
+                    <!-- social icons  -->
+                    <div class="mb-3 ">
+                        <a href="#" class="git merge mybranch
+                        text-dark me-2"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></i></a>
+                        <a href="#" class="text-dark me-2"><i class="fa-brands fa-x-twitter" style="color: #000000;"></i></a>
+                        <a href="#" class="text-dark"><i class="fa-solid fa-globe" style="color: #000000;"></i></a>
+                        <a href="#" class="text-dark me-2"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                    </div>
+    
+                    <!-- products footer images  -->
+                    <div class="d-flex justify-content-end " id="productsFooter">
+                        <img src="../images/1.png" class=" me-2" >
+                        <img src="../images/2.png" class=" me-2" >
+                        <img src="../images/3.png" class=" me-2" >
+                        <img src="../images/4.png" class=" me-2" >
+                        <img src="../images/5.png" class=" me-2" >
+                    </div>
+
+                </div>
+            </div>
+    
+            <!-- copyrights part  -->
+            <div class="text-center mt-4">
+                <p class="small">&copy; 2024 <span class="text-danger fw-bold">FoodTrove</span>, All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
