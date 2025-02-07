@@ -57,5 +57,65 @@
 }
 
 /* ********************************************* */
-/* ********** product table ******************** */
+/* ********** checkout body ******************** */
 /* ********************************************* */
+
+/* first side section */
+.green-sal {
+    color: #64B496;
+}
+
+.muted-sal {
+    color: #7A7A7A;
+}
+
+/* second side section */
+
+.left-sec-card p:first-of-type {
+    color: #7A7A7A;
+    font-size: 15px;
+}
+
+.left-sec-card form label {
+    color: #2B2B2D;
+    margin-bottom: 5px;
+}
+
+.left-sec-card form input {
+    accent-color: #F53E32;
+}
+
+.left-sec-card form span {
+    color: #7A7A7A;
+    font-size: 15px;
+}
+
+.left-sec-card form textarea {
+    resize: none;
+}
+
+/* third side section */
+
+.left-th-card p{
+    color: #7A7A7A;
+    font-size: 15px;
+}
+
+.left-th-card input {
+    accent-color: #F53E32;
+    cursor: pointer;
+}
+
+.left-th-card label {
+    color: #777;
+}
+
+/* fourth side section */
+
+
+
+
+
+
+
+
