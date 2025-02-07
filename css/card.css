@@ -23,13 +23,13 @@
     transform: scale(1.1);
 }
 
-.btn-dark{
+.btn-dark {
     background-color: white !important;
     border-left: 0;
     border-color: var(--bs-border-color);
 }
 
-.me-2{
+.me-2 {
     margin-right: 0 !important;
 }
 
@@ -37,17 +37,18 @@
 /* ******************* Card nav ******************** */
 /* ********************************************* */
 
-.card-nav{
+.card-nav {
     height: 70px;
     background-color: #F53E32;
     padding-top: 15px;
 }
+
 .card-nav * {
     color: white;
     font-weight: bold;
 }
 
-.card-nav .breadcrumb a{
+.card-nav .breadcrumb a {
     text-decoration: none;
 }
 
@@ -56,5 +57,95 @@
 }
 
 /* ********************************************* */
-/* ******************* product table ******************** */
+/* ********** product table ******************** */
 /* ********************************************* */
+
+.bg-t-color * {
+    background-color: #E9E9E9 !important;
+}
+
+.custom-cart-table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-cart-table * {
+    border: 0;
+}
+
+.custom-cart-table thead {
+    background: #e9ecef;
+    font-weight: bold;
+}
+
+.custom-cart-table img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.custom-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-quantity button {
+   
+    background: white;
+    padding: 3px 10px;
+    cursor: pointer;
+    border-color: #ddd;
+}
+
+.custom-quantity button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #ddd;
+    border-right: 0;
+}
+
+.custom-quantity button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ddd;
+    border-left: 0;
+}
+
+.custom-quantity input {
+    width: 40px;
+    text-align: center;
+    padding: 3px 10px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.custom-action i {
+    color: #555555;
+    cursor: pointer;
+}
+
+.custom-checkout-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.custom-checkout-btn:hover {
+    background: #ff3333;
+}
+
+.custom-cart-table thead tr th {
+    background-color: #E9E9E9;
+}
+
+.custom-cart-table,
+.custom-cart-table tbody tr td {
+    background-color: #F7F7F8;
+    padding: 20px !important;
+}
