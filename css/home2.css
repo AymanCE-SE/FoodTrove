@@ -23,6 +23,16 @@
     transform: scale(1.1);
 }
 
+.btn-dark{
+    background-color: white !important;
+    border-left: 0;
+    border-color: var(--bs-border-color);
+}
+
+.me-2{
+    margin-right: 0 !important;
+}
+
 /* ********************************************* */
 /* ******************* Hero ******************** */
 /* ********************************************* */
