@@ -460,13 +460,32 @@
 }
 
 
+/* ********************************************************** */
+/* ******************* banner 2 ***************************** */
+/* ********************************************************** */
+
+.banner2{
+    background-color: #E6E6E6;
+    position: relative;
+    padding-top: 50px;
+    background-color: #c4ddd1;
+    border-radius: 20px;
+    padding-left: 20px ;
+}
+
+.banner2 .nest-mart{
+    color: #3BB77E;
+}
+
+.banner2 form{
+    padding-right: 20px;
+}
 
 
-
-
-
-
-
+.banner2 .lttuce{
+    right: 3%;
+    height: 75%;
+}
 
 
 
@@ -568,6 +587,12 @@
 
     .hero .img2 {
         height: 15%;
+    }
+    .banner2 .lttuce{
+        height: 50%;
+    }
+    .banner2 form .btn-danger{
+        padding: 10px;
     }
 }
 
