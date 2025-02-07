@@ -387,10 +387,77 @@
     
 }
 
-/*
-absoulte position for deals-content 
 
-*/
+/* ********************************************************** */
+/* ******************* Top Sales  *************************** */
+/* ********************************************************** */
+.product-section {
+    padding: 40px 0;
+}
+.product-section .row{
+    margin: 0 !important;
+}
+
+.product-section .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.product-section .product-title::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #BCE3C9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* margin-top: 5px; */
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.product-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    padding: 5px;
+}
+.product-info {
+    flex: 1;
+}
+.product-info h6 {
+    font-size: 14px;
+    margin: 0;
+}
+.rating {
+    font-size: 12px;
+    color: #888;
+}
+.rating .fa-star {
+    color: gold;
+}
+.price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #28a745;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+    margin-left: 5px;
+}
 
 
 
@@ -515,5 +582,11 @@ absoulte position for deals-content
     
     .deals .deals-content{
         bottom: -15%;
+    }
+}
+
+@media (min-width: 992px){
+    .product-section{
+        margin-top: 100px;
     }
 }
