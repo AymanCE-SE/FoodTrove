@@ -110,8 +110,20 @@
     color: #777;
 }
 
-/* fourth side section */
+/* right side section */
+.right-first-card .form-group div:first-of-type {
+    margin-right: 50px;
+    padding: 0 ;
+}
 
+.right-first-card .form-group input {
+    accent-color: #198754 !important;
+}
+
+.right-first-card .btn {
+    width: 110px;
+    background-color: #F53E32 !important;
+}
 
 
 

@@ -373,24 +373,37 @@
                 <div class="col-lg-8">
 
                     <!-- Section 1 -->
-                    <div class="card p-4 mb-3">
-                        <h4>New Customer</h4>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="accountType" checked>
-                            <label class="form-check-label">Register Account</label>
+                    <div class="card p-4 mb-3 right-first-card">
+                        <h4>New <br>Customer</h4>
+                        <p class="muted-text">Checkout Options</p>
+
+                        <div class="form-group d-flex">
+                            <div class="form-check ml-3">
+                                <input type="radio" id="flatRate" name="accountType" class="custom-control-input"
+                                    checked>
+                                <label class="form-check-label">Register Account</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="flatRate" name="accountType" class="custom-control-input">
+                                <label class="form-check-label">Guest Account</label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="accountType">
-                            <label class="form-check-label">Guest Account</label>
-                        </div>
-                        <p>By creating an account, you will be able to shop faster and track orders.</p>
+
+                        <p class="my-3">By creating an account you will be able to shop faster, be up to date on an
+                            order's
+                            status, and keep track of the orders you have previously made.</p>
                         <button class="btn btn-danger">Continue</button>
+
                         <hr>
-                        <h4>Returning Customer</h4>
-                        <input type="email" class="form-control mb-2" placeholder="Enter your email address">
-                        <input type="password" class="form-control mb-2" placeholder="Enter your password">
-                        <button class="btn btn-danger">Login</button>
-                        <a href="#" class="ms-2">Forgot Password?</a>
+                        <h4 class="my-3">Returning Customer</h4>
+                        <label>Email Adress</label>
+                        <input type="email" class="form-control mb-3 p-3" placeholder="Enter your email address">
+                        <label>Password</label>
+                        <input type="password" class="form-control mb-3 p-3" placeholder="Enter your password">
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-danger">Login</button>
+                            <a href="#" class="ms-3">Forgot Password?</a>
+                        </div>
                     </div>
 
                     <!-- Section 2 -->
