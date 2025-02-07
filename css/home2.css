@@ -328,12 +328,12 @@
 /* ******************** Daily Ssles ******************* */
 /*  *************************************************** */
 
-.dialy-card{
+.dialy-card {
     padding: 0;
     position: relative;
 }
 
-.dialy-content{
+.dialy-content {
     position: absolute;
     z-index: 2;
     color: white;
@@ -345,16 +345,16 @@
     /* margin-top: 50px; */
 }
 
-.dialy-content h1{
+.dialy-content h1 {
     font-size: 30px;
     margin-bottom: 60px;
 }
 
-.btn-danger{
+.btn-danger {
     background-color: #F53E32 !important;
 }
 
-.dialy-sales .product-card p:last-of-type{
+.dialy-sales .product-card p:last-of-type {
     font-size: 15px;
 }
 
@@ -362,19 +362,19 @@
 /* ******************* Deals of the day ********************* */
 /* ********************************************************** */
 
-.deals .product-card{
+.deals .product-card {
     border: 0;
     padding: 0;
     position: relative;
     align-items: center;
 }
 
-.deals .product-card img{
+.deals .product-card img {
     width: 100%;
     margin-bottom: 0;
 }
 
-.deals .deals-content{
+.deals .deals-content {
     position: absolute;
     z-index: 2;
     background-color: white;
@@ -384,7 +384,7 @@
     bottom: -40%;
     left: 5%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 
@@ -394,7 +394,8 @@
 .product-section {
     padding: 40px 0;
 }
-.product-section .row{
+
+.product-section .row {
     margin: 0 !important;
 }
 
@@ -407,7 +408,7 @@
     position: relative;
 }
 
-.product-section .product-title::after{
+.product-section .product-title::after {
     content: "";
     display: block;
     width: 70px;
@@ -424,6 +425,7 @@
     align-items: center;
     margin-bottom: 15px;
 }
+
 .product-item img {
     width: 60px;
     height: 60px;
@@ -433,25 +435,31 @@
     background: #f9f9f9;
     padding: 5px;
 }
+
 .product-info {
     flex: 1;
 }
+
 .product-info h6 {
     font-size: 14px;
     margin: 0;
 }
+
 .rating {
     font-size: 12px;
     color: #888;
 }
+
 .rating .fa-star {
     color: gold;
 }
+
 .price {
     font-size: 14px;
     font-weight: bold;
     color: #28a745;
 }
+
 .old-price {
     text-decoration: line-through;
     color: #999;
@@ -464,74 +472,79 @@
 /* ******************* banner 2 ***************************** */
 /* ********************************************************** */
 
-.banner2{
+.banner2 {
     background-color: #E6E6E6;
     position: relative;
     padding-top: 50px;
     background-color: #c4ddd1;
     border-radius: 20px;
-    padding-left: 20px ;
+    padding-left: 20px;
 }
 
-.banner2 .nest-mart{
+.banner2 .nest-mart {
     color: #3BB77E;
 }
 
-.banner2 form{
+.banner2 form {
     padding-right: 20px;
 }
 
 
-.banner2 .lttuce{
+.banner2 .lttuce {
     right: 3%;
     height: 75%;
 }
 
+/* ************************************************************* */
+/* ******************* grid icons ************************ */
+/* ************************************************************* */
+
+.grid-icons .card {
+    background-color: #F4F6FA;
+    border: 0;
+}
+
+.grid-icons h5 {
+    font-size: 15px;
+}
 
 
+.custom-features-section {
+    padding: 40px 0;
+}
 
+.custom-feature-card {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #ddd;
+}
 
+.custom-feature-card:hover {
+    background: #eef6ff;
+    border-color: #007bff;
+}
 
+.custom-feature-icon {
+    font-size: 30px;
+    color: #00b894;
+    margin-right: 15px;
+}
 
+.custom-feature-text h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.custom-feature-text p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
 
 
 
@@ -588,30 +601,32 @@
     .hero .img2 {
         height: 15%;
     }
-    .banner2 .lttuce{
+
+    .banner2 .lttuce {
         height: 50%;
     }
-    .banner2 form .btn-danger{
+
+    .banner2 form .btn-danger {
         padding: 10px;
     }
 }
 
 
 @media (max-width: 992px) {
-    .deals .product-card{
+    .deals .product-card {
         margin-bottom: 100px;
     }
 }
 
 @media (max-width: 576px) {
-    
-    .deals .deals-content{
+
+    .deals .deals-content {
         bottom: -15%;
     }
 }
 
-@media (min-width: 992px){
-    .product-section{
+@media (min-width: 992px) {
+    .product-section {
         margin-top: 100px;
     }
 }
