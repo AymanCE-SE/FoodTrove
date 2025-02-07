@@ -34,5 +34,27 @@
 }
 
 /* ********************************************* */
-/* ******************* Hero ******************** */
+/* ******************* Card nav ******************** */
+/* ********************************************* */
+
+.card-nav{
+    height: 70px;
+    background-color: #F53E32;
+    padding-top: 15px;
+}
+.card-nav * {
+    color: white;
+    font-weight: bold;
+}
+
+.card-nav .breadcrumb a{
+    text-decoration: none;
+}
+
+.card-nav .breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+
+/* ********************************************* */
+/* ******************* product table ******************** */
 /* ********************************************* */
