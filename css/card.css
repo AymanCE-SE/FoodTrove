@@ -149,3 +149,81 @@
     background-color: #F7F7F8;
     padding: 20px !important;
 }
+
+/* ********************************************* */
+/* ********** popualr products ******************** */
+/* ********************************************* */
+
+.p-pop{
+    width: 50%;
+    margin: 25px auto;
+}
+
+/* .pop-products{
+    position: relative;
+} */
+.img-prod {
+    padding: 10px;
+    position: relative;
+}
+
+.img-prod::before {
+    content: "....";
+    position: absolute;
+    left: 43%;
+    bottom: -2%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    z-index: 2;
+    text-align: center;
+    padding-top: 10px;
+    color: #ddd;
+}
+
+.pop-products .card-body {
+    padding: 20px 10px !important;
+}
+
+.pop-products .text-muted {
+    color: #777777 !important;
+}
+.pop-products .dots{
+    color: #F5885F;
+    opacity: 0.5;
+}
+.pop-products .card-text{
+    color: #F53E32;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.pop-products .card-text .text-muted{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
