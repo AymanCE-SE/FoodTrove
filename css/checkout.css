@@ -29,6 +29,11 @@
     border-color: var(--bs-border-color);
 }
 
+.btn-dark i{
+    color: #000 !important;
+}
+
+
 .me-2 {
     margin-right: 0 !important;
 }
@@ -125,8 +130,15 @@
     background-color: #F53E32 !important;
 }
 
+/* right second section */
+.right-second-card .custom-control-input{
+    accent-color: #F53E32 !important;
+}
 
-
+.right-second-card .form-inputs input
+.right-second-card .form-inputs select {
+    padding: 10px;
+}
 
 
 

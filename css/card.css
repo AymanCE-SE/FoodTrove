@@ -29,6 +29,10 @@
     border-color: var(--bs-border-color);
 }
 
+.btn-dark i{
+    color: #000 !important;
+}
+
 .me-2 {
     margin-right: 0 !important;
 }
