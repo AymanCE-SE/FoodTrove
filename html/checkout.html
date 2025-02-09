@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+</head>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+<!-- font awesome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Pacifico&display=swap" rel="stylesheet">
+<!-- CSS-Sheet  -->
+<link rel="stylesheet" href="../css/checkout.css">
+
+
+<body>
+
+    <header class="container-fluid">
+        <!-- Top Nav Bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--  Links  -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto m-auto col-5 justify-content-evenly">
+                        <li class="nav-item">
+                            <a class="nav-link col-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle col-1" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle col-1" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle col-1" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle col-1" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle col-1" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Elements
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <span class="navbar-text col-3">
+                        <i class="fa-solid fa-phone"></i>
+                        +123 (456) (7890)
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Bottom Nav  -->
+        <nav class="navbar navbar-expand-lg border-top border-bottom border-light-secondary flex-wrap">
+            <div class="container-fluid justify-content-start ms-5 col-9 col-md-6">
+                <!-- Logo  -->
+                <div class=" d-flex align-items-center d-none d-lg-block">
+                    <img class=" " src="../images/Singaporean.png" width="34px" height="42px" alt="" />
+                    <span class=" slogan ">FoodTrove</span>
+                </div>
+                <!-- search bar -->
+                <form class="d-flex mx-md-5 col-6" role="search">
+                    <input class="form-control ms-3 col-4 border-success" id="searchBar" type="search"
+                        placeholder="Search for items..." aria-label="Search" />
+                    <div class="dropdown">
+                        <button class="btn btn-outline-dark dropdown-toggle h-100 border-success rounded-0"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            All Categories
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-danger " type="submit" id="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- icons  -->
+            <div class="icons  col-2 col-md-4 text-body-secondary">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item me-3 d-none d-lg-flex">
+                        <a class="nav-link" href="#"><i class="fas fa-user "></i> Account</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-flex">
+                        <a class="nav-link " href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                    </li>
+                    <li class="nav-item d-none d-md-flex">
+                        <a class="nav-link " href="#"><i class="fa-solid fa-cart-shopping"></i> cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <!-- ********************************************************************************* -->
+    <!-- ************************************** checkout   *********************************** -->
+    <!-- ********************************************************************************* -->
+
+    <main>
+
+
+        <div class="container-fluid d-flex align-items-center card-nav">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <p>Cart</p>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Cart</li> <!-- set class  `active`  -->
+                    </ol>
+                </nav>
+
+            </div>
+
+        </div>
+
+
+        <!-- *************************************************************************** -->
+        <!-- **************************  Checkout body  ************************************ -->
+        <!-- *************************************************************************** -->
+
+
+        <div class="container my-5">
+
+            <div class="row">
+
+                <!-- Side Section -->
+                <div class="col-lg-4">
+
+                    <!-- first section -->
+                    <!-- ************************************************************************************** -->
+                    <div class="card p-3 mb-3">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Summary</h5>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Sub-Total</span>
+                                <span>$80.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span>Delivery Charges</span>
+                                <span>$80.00</span>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between mb-3">
+                                <strong>Total Amount</strong>
+                                <strong>$80.00</strong>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="../images/checkout/div.cr-pro-image.png"
+                                                    class="img-fluid rounded-left h-100" alt="Smoked Honey Spiced Nuts"
+                                                    style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Smoked Honey Spiced Nuts</h6>
+                                                    <div class="text-warning">
+                                                        ★★★★☆
+                                                    </div>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <span class="green-sal"><strong>$120.25</strong></span>
+                                                        <span class="muted-sal"><del>$123.25</del></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="card mb-3 border-0">
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src="../images/checkout/div.cr-pro-image1.png"
+                                                    class="img-fluid rounded-left h-100" alt="Smoked Honey Spiced Nuts"
+                                                    style="max-width: 100%;">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h6 class="card-title">Smoked Honey Spiced Nuts</h6>
+                                                    <div class="text-warning">
+                                                        ★★★★☆
+                                                    </div>
+                                                    <div class="d-flex justify-content-between mt-2">
+                                                        <span class="green-sal"><strong>$120.25</strong></span>
+                                                        <span class="muted-sal"><del>$123.25</del></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- second section -->
+                    <!-- ************************************************************************************** -->
+                    <div class="card p-3 mb-3">
+                        <div class="card-body left-sec-card">
+
+                            <h5 class="card-title">Delivery Method</h5>
+                            <p class="card-text">Please select the preferred shipping method to use on this order.</p>
+
+                            <form>
+                                <div class="form-group d-flex justify-content-between">
+
+                                    <div class="custom-control custom-radio custom-control-inline">
+
+                                        <label class="custom-control-label" for="freeShipping">Free Shipping</label>
+                                        <br>
+
+                                        <input type="radio" id="freeShipping" name="shippingMethod"
+                                            class="custom-control-input" checked>
+                                        <span>Rate - $0.00</span>
+                                    </div>
+
+                                    <div class="custom-control custom-radio custom-control-inline">
+
+                                        <label class="custom-control-label" for="flatRate">Flat Rate</label>
+                                        <br>
+                                        <input type="radio" id="flatRate" name="shippingMethod"
+                                            class="custom-control-input">
+                                        <span>Rate - $5.00</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="mt-2" for="orderComments">Add Comments About Your Order</label>
+                                    <textarea class="form-control" id="orderComments" rows="3"></textarea>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- third section -->
+                    <!-- ************************************************************************************** -->
+
+                    <div class="card p-3 left-th-card">
+                        <h5>Payment Method</h5>
+                        <p>Please select the preferred payment method to use on this order.</p>
+
+                        <form>
+                            <div class="form-check">
+                                <input type="radio" id="flatRate" name="payment" class="custom-control-input" checked>
+                                <label class="form-check-label">Cash On Delivery</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="flatRate" name="payment" class="custom-control-input">
+                                <label class="form-check-label">UPI</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="flatRate" name="payment" class="custom-control-input">
+                                <label class="form-check-label">Bank Transfer</label>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <!-- fouth section -->
+                    <!-- ************************************************************************************** -->
+
+                    <div class="card p-3 left-th-card my-3">
+                        <h5>Payment Method</h5>
+                        <img src="../images/checkout/payment.png.png" alt="" class="img-fluid">
+                    </div>
+
+
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-8">
+
+                    <!-- Section 1 -->
+                    <div class="card p-4 mb-3 right-first-card">
+                        <h4>New <br>Customer</h4>
+                        <p class="muted-text">Checkout Options</p>
+
+                        <div class="form-group d-flex">
+                            <div class="form-check ml-3">
+                                <input type="radio" id="flatRate" name="accountType" class="custom-control-input"
+                                    checked>
+                                <label class="form-check-label">Register Account</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="flatRate" name="accountType" class="custom-control-input">
+                                <label class="form-check-label">Guest Account</label>
+                            </div>
+                        </div>
+
+                        <p class="my-3">By creating an account you will be able to shop faster, be up to date on an
+                            order's
+                            status, and keep track of the orders you have previously made.</p>
+                        <button class="btn btn-danger">Continue</button>
+
+                        <hr>
+                        <h4 class="my-3">Returning Customer</h4>
+                        <label>Email Adress</label>
+                        <input type="email" class="form-control mb-3 p-3" placeholder="Enter your email address">
+                        <label>Password</label>
+                        <input type="password" class="form-control mb-3 p-3" placeholder="Enter your password">
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-danger">Login</button>
+                            <a href="#" class="ms-3">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <!-- Section 2 -->
+
+                    <div class="card p-4 right-second-card">
+                        <h4 class="mb-3">Billing Details</h4>
+
+                        <!-- Checkout Options -->
+                        <div class="mb-3">
+                            <label class="form-label">Checkout Options</label>
+                            <div class="d-flex">
+                                <div class="me-5">
+                                    <input type="radio" id="existingAddress" name="checkoutOption"
+                                        class="custom-control-input" checked>
+                                    <label for="existingAddress" class="form-check-label">I want to use an existing
+                                        address</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="newAddress" name="checkoutOption"
+                                        class="custom-control-input">
+                                    <label for="newAddress" class="form-check-label">I want to use new address</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Billing Form -->
+                        <div class="row g-3 form-inputs">
+                            <div class="col-md-6">
+                                <label class="form-label">First Name*</label>
+                                <input type="text" class="form-control" placeholder="Enter your first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" placeholder="Enter your last name">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Address</label>
+                                <input type="text" class="form-control" placeholder="Address Line 1">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">City *</label>
+                                <select class="form-select">
+                                    <option selected>City</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Post Code</label>
+                                <input type="text" class="form-control" placeholder="Post Code">
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label class="form-label">Country *</label>
+                                <select class="form-select">
+                                    <option selected>Country</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Region State</label>
+                                <select class="form-select">
+                                    <option selected>Region/State</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Place Order Button -->
+                    <div class="mt-4 d-flex justify-content-end">
+                        <button class="btn btn-danger">Place Order</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </main>
+
+
+    <!-- *********************************************************************** -->
+    <!-- **************************  Footer  ********************************** -->
+    <!-- *********************************************************************** -->
+
+    <!-- page footer -->
+    <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- section 1 -->
+                <div class="col-md-3">
+                    <!-- logo  -->
+                    <div class=" d-flex align-items-center d-none d-lg-block">
+                        <img class=" " src="../images/Singaporean.png" width="46.97" height="46.97" alt="" />
+                        <span class=" slogan fs-6 ">FoodTrove</span>
+                    </div>
+                    <p class="small">
+                        FoodTrove is the biggest market of grocery products. Get your daily needs from our store.
+                    </p>
+                    <p><i class="fas fa-map-marker-alt text-danger"></i> 51 Green St.Huntington ohaio beach ontario, NY
+                        11746 KY 4783, USA.</p>
+                    <p><i class="fas fa-envelope text-danger"></i> example@email.com</p>
+                    <p><i class="fas fa-phone text-danger"></i> +91 123 4567890</p>
+                </div>
+
+                <!-- section 2  -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Delivery Information</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <!-- section 3  -->
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Category</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">Dairy & Bakery</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fruits & Vegetable</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Snack & Spice</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Juice & Drinks</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Chicken & Meat</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Fast Food</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-4 ">
+                    <h5 class="fw-bold">Subscribe Our Newsletter</h5>
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Search here..." aria-label="Search">
+                        <button class="btn btn-dark"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+
+                    <!-- social icons  -->
+                    <div class="mb-3 soc-icons">
+                        <a href="#" class="git merge mybranch
+                        text-dark me-2"><img src="../images/footer/type.png" alt=""></a>
+                        <a href="#" class="text-dark me-2"><img src="../images/footer/type-1.png" alt=""></a>
+                        <a href="#" class="text-dark"><img src="../images/footer/type-2.png" alt=""></i></a>
+                        <a href="#" class="text-dark me-2"><img src="../images/footer/type-3.png" alt=""></i></a>
+                    </div>
+
+                    <!-- products footer images  -->
+                    <div class="d-flex justify-content-end" id="productsFooter">
+                        <img src="../images/1.png" class=" me-2" width="73.59">
+                        <img src="../images/2.png" class=" me-2" width="73.59">
+                        <img src="../images/3.png" class=" me-2" width="73.59">
+                        <img src="../images/4.png" class=" me-2" width="73.59">
+                        <img src="../images/5.png" class=" me-2" width="73.59">
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyrights part  -->
+            <div class="text-center mt-4">
+                <p class="small">&copy; 2024 <span class="text-danger fw-bold">FoodTrove</span>, All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <script src="/bootstrap-5.3.3-dist/js/jquery-3.7.1.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
